@@ -8,3 +8,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@media screen and (min-width: 900px) {
+  .customMinWidth {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .align {
+    text-align: center;
+    border: 1px solid red;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+.backgroundOverlay {
+  background: rgba(0, 0, 0, 0.55);
+}

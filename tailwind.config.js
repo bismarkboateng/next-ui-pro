@@ -10,6 +10,9 @@ module.exports = {
         Poppins: ['Poppins', 'sans-serif'],
         Raleway: ['Raleway', 'sans-serif'],
       },
+      backgroundImage: {
+        "hero":  "url('/src/assets/images/hero-bg.jpg')"
+      }
     },
   },
   plugins: [],
