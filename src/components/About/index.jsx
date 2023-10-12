@@ -6,11 +6,13 @@ import { About } from "../../assets"
 export default function index() {
   return (
     <section className="mt-[13%] lg:flex lg:mt-[5%]
-      lg:flex-row-reverse lg:w-[88%] lg:mx-auto lg:gap-4">
+      lg:flex-row-reverse lg:w-[88%] lg:mx-auto lg:gap-4
+      2xl:w-[70%] 2xl:mt-[3%]">
       <img 
         src={About} 
         alt="about" 
-        className="w-[93%] mx-auto md:w-[89%] lg:w-[50%] lg:h-[55%] xl:h-[45]"
+        className="w-[93%] mx-auto md:w-[89%] lg:w-[50%] lg:h-[55%] xl:h-[45]
+        2xl:w-[50%]"
       />
       <div className="w-[92%] mx-auto mt-10 md:w-[90%] lg:mt-0">
 
@@ -23,7 +25,7 @@ export default function index() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
 
-        <ul className="mt-5 flex flex-col gap-2 lg:gap-1">
+        <ul className="mt-5 flex flex-col gap-2 lg:gap-1 2xl:gap-5">
           <li className="flex flex-row gap-2">
             <VscCheckAll
               className="text-[#ffc451] text-[20px] font-normal"
@@ -40,7 +42,7 @@ export default function index() {
 
           <li className="flex flex-row gap-2">
             <VscCheckAll className="text-[#ffc451] text-[70px] md:text-[30px] font-normal
-            lg:text-[60px]"/>
+            lg:text-[60px] 2xl:text-[30px]"/>
             <p className="text-[16px] font-OpenSans leading-6 text-[#444444] ">
              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
             </p>
@@ -48,7 +50,7 @@ export default function index() {
 
         </ul>
 
-        <p className="mt-8 text-[16px] font-OpenSans leading-6 text-[#444444] lg:mt-3">
+        <p className="mt-8 text-[16px] font-OpenSans leading-6 text-[#444444] lg:mt-3 2xl:mt-5">
           Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
         </p>
       </div>

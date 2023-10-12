@@ -1,4 +1,6 @@
-import { Navbar, Herosection, About } from "./components"
+import { 
+  Navbar, Herosection, About, Companies, Features
+} from "./components"
 
 export default function App() {
 
@@ -6,7 +8,9 @@ export default function App() {
     <div className="">
       <Navbar />
       <Herosection />
-      <About />
+      <About /> 
+      <Companies />
+      <Features />
     </div>
   )
 }
