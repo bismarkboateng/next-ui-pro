@@ -1,5 +1,6 @@
 import { 
-  Navbar, Herosection, About, Companies, Features
+  Navbar, Herosection, About, Companies, Features,
+  Services
 } from "./components"
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
       <About /> 
       <Companies />
       <Features />
+      <Services />
     </div>
   )
 }

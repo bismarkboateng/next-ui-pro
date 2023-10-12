@@ -1,15 +1,32 @@
-import { RiStoreLine } from "react-icons/ri"
+import { useState } from "react"
+import { Icon } from ".."
+
+export default function index({ icon, header, content }) {
+  const [onHover, setOnHover] = useState(false)
+
+  const onMouseHover = () => {
+    setOnHover(prevOnHover => !prevOnHover)
+  }
+
+  const onMouseLeaveComp = () => {
+    setOnHover(false)
+  }
 
 
-export default function index({ icon, text}) {
   return (
-    <div className="px-[20px] py-[30px] border border-[#ffffff4d] md:col-start-1 col-span-1">
-      <div className="flex flex-col justify-center items-center">
-        <li  className="text-[#ffc451] text-[32px] leading-[1px]">{ icon }</li>
-        <div className="text-xl text-white font-Raleway font-bold md:text-center">
-          { text }
-        </div>
-      </div>
-    </div>
+    <section className={`py-[80px] px-[20px] md:w-[47%] border border-bg-[#ebebeb] 
+    text-center bg-white flex flex-col justify-center items-center lg:w-[30%]
+    ${onHover && 'shadow-xl'} transition ease-in duration-150 cursor-pointer`}
+      onMouseOver={onMouseHover}
+      onMouseLeave={onMouseLeaveComp}
+    >
+      <Icon>{icon}</Icon>
+      <h2 className="text-2xl text-[#151515] font-bold font-Raleway mb-4">
+        {header}
+      </h2>
+      <p className="text-sm md:w-[55%] lg:w-[80%] text-[#444444] leading-6 font-OpenSans">
+        {content}
+      </p>
+    </section>
   )
 }

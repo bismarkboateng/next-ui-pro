@@ -1,6 +1,6 @@
 
 export default function index() {
   return (
-    <div>Line component</div>
+    <h2 className="w-[120px] h-[1px] bg-[#ffde9e]" />
   )
 }

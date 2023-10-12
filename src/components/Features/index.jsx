@@ -13,7 +13,7 @@ export default function index() {
       <img 
         src={FeaturesImage} 
         alt="features" 
-        className="lg:w-[50%] 2xl:w-[45%]"
+        className="lg:w-[50%] 2xl:w-[50%]"
       />
 
       <ul className="flex flex-col gap-10 lg:gap-3 mt-10 lg:mt-4 lg:w-[50%]
