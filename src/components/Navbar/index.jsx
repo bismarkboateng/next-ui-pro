@@ -21,7 +21,7 @@ export default function index() {
   const liStyles = "px-[20px] py-[10px] text-[15px] text-[#151515] font-semibold font-OpenSans"
 
   return (
-    <nav className="sticky top-0 left-0 z-[10] bg-[#000000e6] px-[3%] py-[2.5%] flex
+    <nav className="xl:sticky xl:top-0 xl:left-0 xl:z-[10] bg-[#000000e6] px-[3%] py-[2.5%] flex
     flex-row items-center lg:px-[3.5%] 2xl:py-[1%] 2xl:px-[16.5%] customMinWidth">
       
       <div className="text-white font-bold font-Raleway text-[32px] mr-auto">
@@ -53,7 +53,7 @@ export default function index() {
             onClick={onHandleMenuClick} 
           />
           <ul className="absolute top-[6%] z-[30] border border-red-500 left-[4%] right-[4%]
-          h-[100%] bg-white pt-6">
+          h-[100%] bg-white pt-6 border border-red-600">
             <li className={`${liStyles} bg-[#ffc451]`}>Home</li>
             <li className={liStyles}>About</li>
             <li className={liStyles}>Services</li>

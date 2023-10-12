@@ -1,11 +1,12 @@
-import { Navbar, Herosection } from "./components"
+import { Navbar, Herosection, About } from "./components"
 
 export default function App() {
 
   return (
-    <div className="border border-red-500">
+    <div className="">
       <Navbar />
       <Herosection />
+      <About />
     </div>
   )
 }
