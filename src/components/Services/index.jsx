@@ -3,7 +3,7 @@ import { cardInfo } from "./Data"
 
 export default function index() {
   return (
-    <section className="mt-32 md:w-[95%] mx-auto
+    <section className="mt-32 mb-10 md:w-[95%] mx-auto
     2xl:w-[70%]">
 
       <div className="flex flex-row gap-2 ml-3 md:ml-5">

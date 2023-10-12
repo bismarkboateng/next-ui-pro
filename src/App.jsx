@@ -1,6 +1,6 @@
 import { 
   Navbar, Herosection, About, Companies, Features,
-  Services
+  Services, Calltoaction, Portfolio
 } from "./components"
 
 export default function App() {
@@ -13,6 +13,8 @@ export default function App() {
       <Companies />
       <Features />
       <Services />
+      <Calltoaction />
+      <Portfolio />
     </div>
   )
 }
