@@ -7,12 +7,14 @@ import {
   Portfolio2, Portfolio5, Portfolio9
 } from "../../assets"
 
+
 function Gallery(props) {
   return (
-    <div className="w-[95%] mx-auto flex flex-col gap-8">
-      <img src={props.image1} alt="first" />
-      <img src={props.image2} alt="second" />
-      <img src={props.image3} alt="third" />
+    <div className="w-[95%] mx-auto flex flex-row flex-wrap gap-8
+      md:flex-row md:flex-wrap arrange-image">
+      <img src={props.image1} alt="first" className="w-[40%] 2xl:w-[30%]" />
+      <img src={props.image2} alt="second" className="w-[40%] 2xl:w-[30%]" />
+      <img src={props.image3} alt="third" className="w-[40%] 2xl:w-[30%]" />
       { props.children}
     </div>
   )
@@ -65,9 +67,10 @@ export default function index() {
 
   const actionStyle = "text-sm font-semibold text-[#444444] font-OpenSans px-[15px] pt-[8px] pb-[10px]"
   const onActionSelectStyle = "bg-[#ffc451] transition duration-150 ease-in rounded-sm"
+  const imageStyles = "w-[40%] 2xl:w-[30%]"
 
   return (
-    <section className="mt-20">
+    <section className="mt-20 md:w-[80%] md:mx-auto">
 
       <div className="flex flex-row gap-2 ml-3 md:ml-5">
         <h2 className="text-sm font-medium text-[#aaaaaa] leading-[1px] font-Poppins mb-1">
@@ -149,13 +152,13 @@ export default function index() {
             image3={Portfolio6}
 
           >
-            <img src={Portfolio4} alt="first" />
-            <img src={Portfolio7} alt="second" />
-            <img src={Portfolio8} alt="third" />
+            <img src={Portfolio4} alt="first"  className={imageStyles} />
+            <img src={Portfolio7} alt="second" className={imageStyles} />
+            <img src={Portfolio8} alt="third"  className={imageStyles}/>
 
-            <img src={Portfolio2} alt="first" />
-            <img src={Portfolio5} alt="second" />
-            <img src={Portfolio9} alt="third" />
+            <img src={Portfolio2} alt="first"  className={imageStyles}/>
+            <img src={Portfolio5} alt="second" className={imageStyles} />
+            <img src={Portfolio9} alt="third" className={imageStyles} />
           </Gallery>
         )}
       </div>

@@ -29,6 +29,14 @@
   }
 }
 
+@media screen and (min-width: 500px) {
+  .arrange-image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .backgroundOverlay {
   background: rgba(0, 0, 0, 0.55);
 }
