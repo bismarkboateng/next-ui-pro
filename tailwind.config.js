@@ -12,7 +12,8 @@ module.exports = {
       },
       backgroundImage: {
         "hero":  "url('/src/assets/images/hero-bg.jpg')",
-        "callToAction":  "url('/src/assets/images/cta-bg.jpg')"
+        "callToAction":  "url('/src/assets/images/cta-bg.jpg')",
+        "testimonial": "url('/src/assets/images/testimonials-bg.jpg')"
       }
     },
   },

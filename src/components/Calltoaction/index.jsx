@@ -4,7 +4,7 @@ export default function index() {
   return (
     <>
       
-      <section className="relative bg-callToAction w-[100%] h-[270px] bg-cover bg-center
+      <section className="relative bg-callToAction w-[100%] h-[270px] bg-cover bg-center bg-fixed
         flex flex-row justify-center items-center">
 
         <div className="absolute top-0 left-0 w-[100%] h-[100%] call-to-action z-0" />

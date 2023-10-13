@@ -7,7 +7,7 @@ import {
 
 export default function index() {
   return (
-    <section className="relative bg-hero w-full h-[1000px] md:h-[900px]">
+    <section className="relative bg-hero w-full h-[1000px] md:h-[900px] bg-cover bg-center bg-fixed">
       <div className="w-[100%] h-[100%] backgroundOverlay">
 
         <h1 className="text-white text-center font-Poppins 
