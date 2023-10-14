@@ -1,6 +1,6 @@
 import { Testimonial1, Testimonial2, Testimonial3, Testimonial4, Testimonial5 } from "../../assets"
 
-const testimonialData = [
+export const testimonialData = [
     {
         image: Testimonial1,
         name: "Saul Goodman",
@@ -45,3 +45,4 @@ const testimonialData = [
         id: Math.random(),
     },
 ]
+
