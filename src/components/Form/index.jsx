@@ -2,7 +2,8 @@ import { Input, Button } from ".."
 
 export default function index() {
   return (
-    <form className="mb-10 flex flex-col gap-5 lg:mb-0 lg:mt-4">
+    <form className="mb-10 flex flex-col gap-5 lg:mb-0 lg:mt-4
+        2xl:w-[100%]">
 
         <div className="flex flex-col gap-5 md:flex md:flex-row gap-7">
             <Input

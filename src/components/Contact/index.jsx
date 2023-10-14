@@ -7,7 +7,7 @@ import { Line, Icon, Form } from ".."
 
 export default function index() {
   return (
-    <div className="w-[95%] mx-auto xl:w-[88%]">
+    <div className="w-[95%] mx-auto xl:w-[88%] 2xl:w-[70%]">
       <div className="flex flex-row gap-2">
         <h2 className="text-sm font-medium text-[#aaaaaa] leading-[1px] font-Poppins mb-1">
           CONTACT
@@ -33,8 +33,8 @@ export default function index() {
       </i>
 
 
-      <div className="lg:flex lg:flex-row lg:items-center 
-        lg:gap-5 lg:justify-start xl:gap-32">
+      <div className="w-[100%] lg:flex lg:flex-row lg:items-center 
+        lg:gap-5 lg:justify-start xl:gap-32 2xl:w-[100%] mx-auto">
         <ul className="mt-20 flex flex-col gap-10 mb-10">
           <li className="flex flex-row gap-5">
             <Icon>

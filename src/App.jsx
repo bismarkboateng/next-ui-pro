@@ -1,7 +1,7 @@
 import { 
   Navbar, Herosection, About, Companies, Features,
   Services, Calltoaction, Portfolio, Counts, Testimonial,
-  Team, Contact
+  Team, Contact, Footer, Copyright
 } from "./components"
 
 export default function App() {
@@ -20,6 +20,8 @@ export default function App() {
       <Testimonial />
       <Team />
       <Contact />
+      <Footer />
+      <Copyright />
     </div>
   )
 }

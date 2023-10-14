@@ -20,7 +20,7 @@ export default function index() {
       </p>
 
       <div className="w-[100%] mx-auto mt-10 flex flex-col md:flex-row md:flex-wrap
-        md:gap-7 lg:gap-5 2xl:gap-8 ">
+        md:gap-7 lg:gap-5 2xl:w-[100%] 2xl:gap-8">
         { teamData.map((item) => (
           <Teamcard 
             image={item.image}
