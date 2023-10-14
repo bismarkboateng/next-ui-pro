@@ -13,16 +13,16 @@ export default function index(props) {
   const liStyles = "px-[20px] py-[10px] text-[14px] text-[#151515] font-normal font-OpenSans"
 
   return (
-    <ul className={props.className}>
+    <ul className={props.className} data-aos="fade-up" data-aos-delay="100">
       <li className={liStyles}>Drop Down 1</li>
-      <li className={`${liStyles} flex flex-row justify-between items-center`}
+      <li className={`${liStyles} flex flex-row justify-between items-center cursor-pointer`}
         onClick={onDropDownClickHandler} 
       >
         <p>Deep Drop Down</p>
         <MdOutlineKeyboardArrowRight />
       </li>
       { dropDown && (
-        <ul className="w-[90%] shadow-xl my-[5px] mx-auto">
+        <ul className="w-[90%] shadow-xl my-[5px] mx-auto" data-aos="fade-down" data-aos-delay="100">
           <li className={liStyles}>Deep Drop Down 1</li>
           <li className={liStyles}>Deep Drop Down 2</li>
           <li className={liStyles}>Deep Drop Down 3</li>

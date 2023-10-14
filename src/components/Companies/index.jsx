@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
@@ -10,21 +10,21 @@ import { swiperInfo } from "./companies"
 export default function index() {
   return (
     <section className="mt-20 mb-20
-    w-[95%] mx-auto overflow-hidden 2xl:w-[70%]">
+    w-[95%] mx-auto overflow-hidden 2xl:w-[70%]" data-aos="zoom-in">
 
       <Swiper
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Autoplay,  Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={5}
         loop
+        speed={600}
         autoplay = {{ 
-          delay: 1000,
+          delay: 3000,
           disableOnInteraction: false
         }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
-        navigation
         pagination={{ 
           clickable: true,
           type: "bullets"

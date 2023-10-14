@@ -1,46 +1,38 @@
-
-
-// export default function index() {
-//   return (
-//     // <section className="relative bg-testimonial w-full h-[400px] bg-cover bg-center">
-//     // <div className="absolute top-0 left-0 w-[100%] h-[100%] call-to-action z-0" />
-
-//     // </section>
-//     <section>
-//       testimonial section
-//     </section>
-//   )
-// }
-
+import { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { BiSolidQuoteAltLeft } from "react-icons/bi"
 import { BiSolidQuoteAltRight } from "react-icons/bi"
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules'
+
 import 'swiper/css'
 import 'swiper/css/pagination'
+import 'swiper/css/navigation';
 
 import { testimonialData } from "./testimonial-data"
 
 
+
+
 export default function index() {
+
+
   return (
     <section className="relative bg-testimonial w-full h-[400px] bg-fixed bg-cover bg-center">
       <div className="absolute top-0 left-0 w-[100%] h-[100%] call-to-action z-0" />
 
       <Swiper
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         loop
         speed={600}
         autoplay = {{ 
-          delay: 1000,
+          delay: 3000,
           disableOnInteraction: false
         }}
         onSwiper={(swiper) => {}}
         onSlideChange={() => {}}
-        navigation
         pagination={{ 
           clickable: true,
           type: "bullets"
@@ -53,7 +45,8 @@ export default function index() {
             <SwiperSlide key={item.id}>
 
               <div className="flex flex-col items-center justify-center mb-4 mt-4
-                w-[95%] mx-auto lg:w-[76%] xl:mt-10 2xl:w-[50%] cursor-pointer">
+                w-[95%] mx-auto lg:w-[76%] xl:mt-10 2xl:w-[50%] cursor-pointer"
+                data-aos="fade-up" data-aos-delay="100">
                 <img 
                   src={item.image} 
                   alt="client"

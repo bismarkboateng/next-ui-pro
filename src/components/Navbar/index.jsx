@@ -52,8 +52,8 @@ export default function index() {
             className="absolute top-[2%] right-[5%] z-[10] text-white text-[28px]" 
             onClick={onHandleMenuClick} 
           />
-          <ul className="absolute top-[6%] z-[30] border border-red-500 left-[4%] right-[4%]
-          h-[100%] bg-white pt-6 border border-red-600">
+          <ul className="absolute top-[6%] z-[30] left-[4%] right-[4%]
+          h-[100%] bg-white pt-6">
             <li className={`${liStyles} bg-[#ffc451]`}>Home</li>
             <li className={liStyles}>About</li>
             <li className={liStyles}>Services</li>

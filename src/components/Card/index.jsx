@@ -20,6 +20,7 @@ export default function index({ icon, header, content }) {
       onMouseOver={onMouseHover}
       onMouseLeave={onMouseLeaveComp}
     >
+
       <Icon>{icon}</Icon>
       <h2 className="text-2xl text-[#151515] font-bold font-Raleway mb-4">
         {header}

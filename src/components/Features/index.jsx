@@ -14,12 +14,13 @@ export default function index() {
         src={FeaturesImage} 
         alt="features" 
         className="lg:w-[50%] 2xl:w-[50%]"
+        data-aos="fade-right"
       />
 
       <ul className="flex flex-col gap-10 lg:gap-3 mt-10 lg:mt-4 lg:w-[50%]
         xl:gap-8 2xl:mt-5 2xl:gap-[50px]">
 
-        <li className="flex flex-row gap-3">
+        <li className="flex flex-row gap-3" data-aos="zoom-in" data-aos-delay="500">
           <i>
             <BiReceipt className="text-[48px] text-[#ffc451]" />
           </i>
@@ -33,7 +34,7 @@ export default function index() {
           </div>
         </li>
 
-        <li className="flex flex-row gap-3">
+        <li className="flex flex-row gap-3" data-aos="zoom-in" data-aos-delay="1000">
           <i>
             <BiCubeAlt className="text-[48px] text-[#ffc451]" />
           </i>
@@ -47,7 +48,7 @@ export default function index() {
           </div>
         </li>
 
-        <li className="flex flex-row gap-3">
+        <li className="flex flex-row gap-3" data-aos="zoom-in" data-aos-delay="1500">
           <i>
             <BiImages className="text-[48px] text-[#ffc451]" />
           </i>
@@ -61,7 +62,7 @@ export default function index() {
           </div>
         </li>
 
-        <li className="flex flex-row gap-3">
+        <li className="flex flex-row gap-3" data-aos="zoom-in" data-aos-delay="2000">
           <i>
             <LuShield className="text-[48px] text-[#ffc451]" />
           </i>

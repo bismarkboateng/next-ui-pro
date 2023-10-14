@@ -22,10 +22,11 @@ export default function index({ image, name, profession }) {
       lg:w-[23%] 2xl:w-[23.2%] cursor-pointer"
       onMouseOver={onMouseHoverHandler}
       onMouseLeave={onMouseHoverLeaveHandler}
+      data-aos="fade-up"
     >
 
       { onHover && (
-        <div className="absolute bottom-[32%] left-[16%]">
+        <div className="absolute bottom-[32%] left-[16%]" data-aos="fade-down">
           <Socials 
             socialStyle={socialStyle}
             socialWrapperStyle={socialWrapperStyle}

@@ -1,27 +1,12 @@
 import { useState } from "react"
-
 import { Line } from ".."
-import { 
-  Portfolio1, Portfolio3, Portfolio6,
-  Portfolio4, Portfolio7, Portfolio8,
-  Portfolio2, Portfolio5, Portfolio9
-} from "../../assets"
+import { all, app, card, web } from "./portfolio"
 
 
-function Gallery(props) {
-  return (
-    <div className="w-[95%] mx-auto flex flex-row flex-wrap gap-8
-      md:flex-row md:flex-wrap arrange-image">
-      <img src={props.image1} alt="first" className="w-[40%] 2xl:w-[30%]" />
-      <img src={props.image2} alt="second" className="w-[40%] 2xl:w-[30%]" />
-      <img src={props.image3} alt="third" className="w-[40%] 2xl:w-[30%]" />
-      { props.children}
-    </div>
-  )
-}
 
 
 export default function index() {
+  // const [onHover, setOnHover] = useState(false)
   const [actions, setActions] = useState({
     all: true,
     app: false,
@@ -65,14 +50,14 @@ export default function index() {
     })
   }
 
-  const actionStyle = "text-sm font-semibold text-[#444444] font-OpenSans px-[15px] pt-[8px] pb-[10px]"
+
+  const actionStyle = "text-sm font-semibold text-[#444444] font-OpenSans px-[15px] pt-[8px] pb-[10px] cursor-pointer"
   const onActionSelectStyle = "bg-[#ffc451] transition duration-150 ease-in rounded-sm"
-  const imageStyles = "w-[40%] 2xl:w-[30%]"
+  const imageStyles = "w-[100%] md:w-[40%] 2xl:w-[30%]"
 
   return (
-    <section className="mt-20 md:w-[80%] md:mx-auto 2xl:w-[74%]">
-
-      <div className="flex flex-row gap-2 ml-3 md:ml-5 2xl:ml-10">
+    <section className="mt-20  mx-auto md:w-[80%] md:mx-auto 2xl:w-[74%]">
+      <div className="flex flex-row gap-2 ml-3 md:ml-5 2xl:ml-10" data-aos="fade-up">
         <h2 className="text-sm font-medium text-[#aaaaaa] leading-[1px] font-Poppins 
           mb-1">
           PORTFOLIO
@@ -81,89 +66,91 @@ export default function index() {
       </div>
 
       <p className="text-4xl font-bold font-Poppins text-[#151515] ml-3 mt-2 
-        md:ml-5 2xl:ml-9">
+        md:ml-5 2xl:ml-9" data-aos="fade-up">
         CHECK OUR PORTFOLIO
       </p>
 
-      <div className="flex flex-row gap-7 items-center justify-center mt-10 mb-10">
-        <p
-          className={`${actionStyle} ${actions.all ? onActionSelectStyle : ''}`}
-          onClick={onAllHandler}
-        >
-          ALL
-        </p>
+      <div className="flex flex-row gap-7 items-center justify-center mt-10 mb-10" 
+      data-aos="fade-up" data-aos-delay="100">
+        <p className={`${actionStyle} ${actions.all ? onActionSelectStyle : ''}`}
+          onClick={onAllHandler}>ALL</p>
 
-        <p
-          className={`${actionStyle} ${actions.app ? onActionSelectStyle : ''}`}
-          onClick={onAppHandler}
-        >
-          APP
-        </p>
+        <p className={`${actionStyle} ${actions.app ? onActionSelectStyle : ''}`}
+          onClick={onAppHandler}>APP</p>
 
-        <p
-          className={`${actionStyle} ${actions.card ? onActionSelectStyle : ''}`}
-          onClick={onCardHandler}
-        >
-          CARD
-        </p>
+        <p className={`${actionStyle} ${actions.card ? onActionSelectStyle : ''}`}
+          onClick={onCardHandler}>CARD</p>
 
-        <p
-          className={`${actionStyle} ${actions.web ? onActionSelectStyle : ''}`}
-          onClick={onWebHandler}
-        >
-          WEB
-        </p>
-      </div>
-
-      <div className={`${actions.app ? 'flex' : 'hidden'} flex flex-col`}>
-        { actions.app && (
-          <Gallery 
-            image1={Portfolio1}
-            image2={Portfolio3}
-            image3={Portfolio6}
-          />
-        )}
-      </div>
-
-      <div className={`${actions.card ? 'flex' : 'hidden'} flex flex-col`}>
-        { actions.card && (
-          <Gallery 
-            image1={Portfolio4}
-            image2={Portfolio7}
-            image3={Portfolio8}
-          />
-        )}
+        <p className={`${actionStyle} ${actions.web ? onActionSelectStyle : ''}`}
+          onClick={onWebHandler}>WEB</p>
       </div>
 
 
-      <div className={`${actions.web ? 'flex' : 'hidden'} flex flex-col`}>
-        { actions.web && (
-          <Gallery 
-            image1={Portfolio2}
-            image2={Portfolio5}
-            image3={Portfolio9}
-          />
-        )}
-      </div>
+      { actions.all && (
+        <div className="w-[93%] grid grid-cols-1 grid-rows-9 md:grid-cols-2 grid-rows-9 
+          mx-auto cursor-pointer">
+          { all.map((item) => (
+            <div key={item.id}
+              className={`relative w-[100%] mb-6 md:w-[97%] xl:w-[87%] 2xl:w-[60%] md:${item.className}`}
+             
+            >
+              <img src={item.image}
+                className="w-[100%] rounded object-fit"
+                data-aos="zoom-in" data-aos-delay="200"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
-      <div className={`${actions.all ? 'flex' : 'hidden'} flex flex-col`}>
-        { actions.all && (
-          <Gallery 
-            image1={Portfolio1}
-            image2={Portfolio3}
-            image3={Portfolio6}
+      { actions.app && (
+        <div className="w-[93%] grid grid-cols-1 md:grid-cols-2 grid-rows-9 
+          mx-auto cursor-pointer">
+          { app.map((item) => (
+            <div key={item.id}
+              className={`w-[100%] mb-6 md:w-[97%] xl:w-[87%] 2xl:w-[60%] ${item.className}`}
+            >
+              <img src={item.image}
+                className="w-[100%] rounded object-fit"
+                data-aos="zoom-in" data-aos-delay="200"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
-          >
-            <img src={Portfolio4} alt="first"  className={imageStyles} />
-            <img src={Portfolio7} alt="second" className={imageStyles} />
-            <img src={Portfolio8} alt="third"  className={imageStyles}/>
+      { actions.card && (
+        <div className="w-[93%] grid grid-cols-1 md:grid-cols-2 grid-rows-9 
+          mx-auto cursor-pointer">
+          { card.map((item) => (
+            <div key={item.id}
+              className={`w-[100%] mb-6 md:w-[97%] xl:w-[87%] 2xl:w-[60%] ${item.className}`}
+            >
+              <img src={item.image}
+                className="w-[100%] rounded object-fit"
+                data-aos="zoom-in" data-aos-delay="200"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
-            <img src={Portfolio2} alt="first"  className={imageStyles}/>
-            <img src={Portfolio5} alt="second" className={imageStyles} />
-            <img src={Portfolio9} alt="third" className={imageStyles} />
-          </Gallery>
-        )}
-      </div>
+      { actions.web && (
+        <div className="w-[93%] grid grid-cols-1 md:grid-cols-2 grid-rows-9 
+          mx-auto cursor-pointer">
+          { web.map((item) => (
+            <div key={item.id}
+              className={`w-[100%] mb-6 md:w-[97%] xl:w-[87%] 2xl:w-[60%] ${item.className}`}
+            >
+              <img src={item.image}
+                className="w-[100%] rounded object-fit"
+                data-aos="zoom-in" data-aos-delay="200"
+              />
+            </div>
+          ))}
+        </div>
+      )}
+
     </section>
   )
 }

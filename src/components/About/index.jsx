@@ -13,8 +13,10 @@ export default function index() {
         alt="about" 
         className="w-[93%] mx-auto md:w-[89%] lg:w-[50%] lg:h-[55%] xl:h-[45]
         2xl:w-[50%]"
+        data-aos="fade-left" data-aos-delay="100"
       />
-      <div className="w-[92%] mx-auto mt-10 md:w-[90%] lg:mt-0">
+
+      <div className="w-[92%] mx-auto mt-10 md:w-[90%] lg:mt-0" data-aos="fade-right" data-aos-delay="100">
 
         <h1 className="text-[28px] font-bold font-Poppins text-[#444444] 
         leading-[33.6px]">

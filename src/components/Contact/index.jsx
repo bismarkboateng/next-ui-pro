@@ -7,7 +7,7 @@ import { Line, Icon, Form } from ".."
 
 export default function index() {
   return (
-    <div className="w-[95%] mx-auto xl:w-[88%] 2xl:w-[70%]">
+    <div className="w-[95%] mx-auto xl:w-[88%] 2xl:w-[70%]" data-aos="fade-up">
       <div className="flex flex-row gap-2">
         <h2 className="text-sm font-medium text-[#aaaaaa] leading-[1px] font-Poppins mb-1">
           CONTACT

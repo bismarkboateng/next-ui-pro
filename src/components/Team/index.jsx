@@ -6,7 +6,7 @@ import { Line, Teamcard } from ".."
 export default function index() {
   
   return (
-    <section className="w-[95%] mt-20 mx-auto 2xl:w-[70%]">
+    <section className="w-[95%] mt-20 mx-auto 2xl:w-[70%]" data-aos="fade-up">
 
       <div className="flex flex-row gap-2">
         <h2 className="text-sm font-medium text-[#aaaaaa] leading-[1px] font-Poppins mb-1">

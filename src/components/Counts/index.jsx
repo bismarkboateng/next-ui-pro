@@ -18,9 +18,10 @@ export default function index() {
         src={CountsImage} 
         alt="count" 
         className="object-cover md:w-[100%] md:h-[500px] 2xl:w-[40%] 2xl:ml-20"
+        data-aos="fade-right" data-aos-delay="100"
       />
 
-      <div className="mt-10 2xl:w-[40%]">
+      <div className="mt-10 2xl:w-[40%]" data-aos="fade-left" data-aos-delay="100">
         <h3 className="font-bold text-[34px] text-[#151515] font-Raleway mb-2 leading-10">
           Wrap soccer as a result
         </h3>

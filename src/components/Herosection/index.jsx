@@ -13,7 +13,8 @@ export default function index() {
         <h1 className="text-white text-center font-Poppins 
           pt-[20%] px-[2%] py-[1.5%] font-bold text-[28px] 
           md:text-[56px] md:leading-[64px] md:px-[10%] md:pt-[29%] 
-          leading-[36px] lg:pt-[8%] xl:pt-[10%] xl:px-[35%]">
+          leading-[36px] lg:pt-[8%] xl:pt-[10%] xl:px-[35%]"
+          data-aos="fade-up" data-aos-delay="150">
           Powerful Digital Solutions with Gp<span className="text-[#ffc451]">.</span>
         </h1>
         <p className="mt-[3%] text-center text-xl 
@@ -23,7 +24,7 @@ export default function index() {
 
         <div className="mt-20 w-[93%] 2xl:w-[75%] width mx-auto grid grid-cols-1 gap-y-6
         md:grid-cols-6 md:grid-rows-2 md:gap-x-5 xl:grid-cols-12 xl:grid-rows-1
-        justify-center">
+        justify-center" data-aos="zoom-in" data-aos-delay="250">
 
 
           <div className="px-[20px] py-[30px] border border-[#ffffff4d] md:col-start-1 md:col-span-2

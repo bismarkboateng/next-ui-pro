@@ -6,7 +6,7 @@ import { Dropdown } from ".."
 export default function index({ dropDown, onDropDownClick}) {
 
 
-  const linkItem = "text-[15px] text-white font-OpenSans font-semibold"
+  const linkItem = "text-[15px] text-white font-OpenSans font-semibold cursor-pointer"
   return (
     <ul className="hidden lg:flex lg:flex-row lg:gap-6 mr-auto">
       <li className={linkItem}>Home</li>
@@ -21,7 +21,9 @@ export default function index({ dropDown, onDropDownClick}) {
         <MdOutlineKeyboardArrowDown className="mt-1" />
       </li>
       { dropDown && (
-        <Dropdown className="absolute top-[12%] w-[19%] right-[28.1%] bg-white text-white" />
+        <Dropdown className="absolute top-[12%] w-[19%] 
+        right-[28.1%] xl:top-[70%] bg-white text-white"
+        />
       )}
       <li className={linkItem}>Contact</li>
     </ul>
