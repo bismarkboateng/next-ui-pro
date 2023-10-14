@@ -13,7 +13,7 @@ export default function index() {
 
   return (
     <section className="w-[93%] flex flex-col mx-auto mt-32 mb-20
-      xl:flex-row xl:gap-[45px] 2xl:w-[80%]">
+      xl:flex-row xl:gap-[45px] 2xl:w-[79%]">
       <img 
         src={CountsImage} 
         alt="count" 

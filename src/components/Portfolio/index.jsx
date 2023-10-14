@@ -70,16 +70,18 @@ export default function index() {
   const imageStyles = "w-[40%] 2xl:w-[30%]"
 
   return (
-    <section className="mt-20 md:w-[80%] md:mx-auto">
+    <section className="mt-20 md:w-[80%] md:mx-auto 2xl:w-[74%]">
 
-      <div className="flex flex-row gap-2 ml-3 md:ml-5">
-        <h2 className="text-sm font-medium text-[#aaaaaa] leading-[1px] font-Poppins mb-1">
+      <div className="flex flex-row gap-2 ml-3 md:ml-5 2xl:ml-10">
+        <h2 className="text-sm font-medium text-[#aaaaaa] leading-[1px] font-Poppins 
+          mb-1">
           PORTFOLIO
         </h2>
         <Line />
       </div>
 
-      <p className="text-4xl font-bold font-Poppins text-[#151515] ml-3 mt-2 md:ml-5">
+      <p className="text-4xl font-bold font-Poppins text-[#151515] ml-3 mt-2 
+        md:ml-5 2xl:ml-9">
         CHECK OUR PORTFOLIO
       </p>
 

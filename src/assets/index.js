@@ -26,9 +26,19 @@ export { default as Testimonial3 } from "./images/testimonials/testimonials-3.jp
 export { default as Testimonial4 } from "./images/testimonials/testimonials-4.jpg"
 export { default as Testimonial5 } from "./images/testimonials/testimonials-5.jpg"
 
-
 // team
 export { default as Team1 } from "./images/team/team-1.jpg"
 export { default as Team2 } from "./images/team/team-2.jpg"
 export { default as Team3 } from "./images/team/team-3.jpg"
 export { default as Team4 } from "./images/team/team-4.jpg"
+
+
+// clients
+export { default as Client01 } from "./images/clients/client-1.png"
+export { default as Client02 } from "./images/clients/client-2.png"
+export { default as Client03 } from "./images/clients/client-3.png"
+export { default as Client04 } from "./images/clients/client-4.png"
+export { default as Client05 } from "./images/clients/client-5.png"
+export { default as Client06 } from "./images/clients/client-6.png"
+export { default as Client07 } from "./images/clients/client-7.png"
+export { default as Client08 } from "./images/clients/client-8.png"

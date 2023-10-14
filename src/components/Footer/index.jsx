@@ -18,12 +18,12 @@ export default function index() {
     <footer className="pt-[60px] pb-[30px] bg-[#151515]">
 
       <div className="flex flex-col w-[95%] mx-auto
-        md:flex-row md:gap-36 lg:gap-[40px] xl:w-[87%]">
+        md:flex-row md:gap-36 lg:gap-[40px] xl:w-[87%] 2xl:w-[70%]">
 
         <div className="flex flex-col lg:flex lg:flex-row lg:items-start
           ">
 
-          <div className="mr-5">
+          <div className="mr-5 2xl:mr-20">
             <div className="text-white font-bold font-Raleway text-[32px] mr-auto mb-5">
               GP
               <span className="text-[#ffc451]">.</span>
@@ -52,7 +52,7 @@ export default function index() {
           </div>
   
 
-          <div className="mr-8">
+          <div className="mr-8 2xl:mr-20">
             <h4 className={headerLinks}>Useful Links</h4>
             <ul className="flex flex-col gap-4">
               {useFulLinks.map((item) => (
@@ -77,7 +77,7 @@ export default function index() {
             </ul>
           </div>
 
-          <div>
+          <div className="2xl:w-[95%]">
             <h4 className={headerLinks}>Our Newsletter</h4>
             <p className="text-sm font-OpenSans text-white">
               Tamen quem nulla quae legam multos aute sint culpa legam noster magna
